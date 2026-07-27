@@ -31079,7 +31079,7 @@ footer .about-logo img {
 		font-size: 45px !important;
 	}
 	.hero-sub-title, .hero-style5 .hero-title, .hero-style5 .hero-text, .hero-para {
-		text-align: left !important;
+		text-align: center !important;
 	}
 	.btn-group.slideinup {
 		display: flex;
@@ -31191,6 +31191,9 @@ footer .about-logo img {
 
 
 @media (max-width: 767px) {
+	.hero-sub-title {
+        text-align: center;
+    }
 	.header-row {
 		padding: 0 20px !important;
 	}
@@ -31198,13 +31201,16 @@ footer .about-logo img {
 		display: none ;
 	}
 	.th-btn {
-		padding: 15px 24px !important;
+		padding: 15px 17px !important;
 	}
 	.zero-space {
 		padding: 50px 15px 50px 15px;
 	}
 	.header-layout3 .header-logo {
 		padding: 0 !important;
+	}
+	form {
+		padding: 30px !important;
 	}
 	.header-logo, .mobile-logo img {
     	width: 200px !important;
@@ -31213,10 +31219,10 @@ footer .about-logo img {
 		font-size: 32px;
 	}
 	.hero-style5 .hero-title {
-		font-size: 45px !important;
+		font-size: 44px !important;
 	}
 	.hero-sub-title, .hero-style5 .hero-title, .hero-style5 .hero-text, .hero-para {
-		text-align: left !important;
+		text-align: center !important;
 	}
 	.btn-group.slideinup {
 		display: flex !important;
