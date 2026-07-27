@@ -7,7 +7,8 @@
         <title>Fathima Sharin</title>
         <meta name="author" content="Fathima Sharin" />
         <meta name="description" content="Fathima Sharin is a WordPress Developer and Web Developer based in Dubai, UAE. I build responsive, SEO-friendly business websites, eCommerce stores, corporate websites, landing pages, and custom WordPress solutions for clients worldwide.">
-        <meta name="keywords" content="Fathima Sharin, WordPress Developer Dubai, Web Developer UAE, Freelance WordPress Developer, WordPress Designer, PHP Developer, Frontend Developer, HTML, CSS, JavaScript, Bootstrap, WooCommerce Developer, Elementor Expert, Custom WordPress Development, Responsive Website Design, Corporate Website, Business Website, eCommerce Website, Landing Page Developer, Portfolio Website, SEO Friendly Website, Dubai Web Developer">   <meta name="robots" content="INDEX,FOLLOW" />
+        <meta name="keywords" content="Fathima Sharin, WordPress Developer Dubai, Web Developer UAE, Freelance WordPress Developer, WordPress Designer, PHP Developer, Frontend Developer, HTML, CSS, JavaScript, Bootstrap, WooCommerce Developer, Elementor Expert, Custom WordPress Development, Responsive Website Design, Corporate Website, Business Website, eCommerce Website, Landing Page Developer, Portfolio Website, SEO Friendly Website, Dubai Web Developer">   
+        <meta name="robots" content="INDEX,FOLLOW" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
         <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png" />
@@ -131,8 +132,24 @@
                                 </div>
                             </div>
                             <div class="th-hero-images col-md-5 col-12">
-                                <div class="hero-img" data-ani="slideinright" data-ani-delay="0.9s" >
-                                    <img src="assets/img/hero.png" alt="" />
+                                <div class="hero-img1" data-ani="slideinright" data-ani-delay="0.9s" >
+                                    <div class="img-stage" id="stage">
+    <div class="blob-glow"></div>
+    <div class="orbit-ring"></div>
+    <div class="dots"></div>
+    <div class="photo-shape" id="photo">
+        <img src="assets/img/hero.png" alt="">
+    </div>
+    
+    <div class="float-card fc1">
+      <div class="ic">🚀</div>
+      <div><div class="num">10+</div><div class="lbl">PROJECTS</div></div>
+    </div>
+    <div class="float-card fc2">
+      <div class="ic">⭐</div>
+      <div><div class="num">100%</div><div class="lbl">SATISFACTION</div></div>
+    </div>
+  </div>
                                 </div>
                             </div>
                         </div>
@@ -946,69 +963,71 @@
         const projects = [
             {
                 title:"ARNB Group",
-                type:"Corporate Website",
+                type:"Construction & Training",
                 image:"assets/img/projects/arnb.png",
                 link:"https://arnbgroup.com/"
-            },{
+            },
+            
+            {
                 title:"CISB",
-                type:"E-Commerce Website",
+                type:"Educational",
                 image:"assets/img/projects/CISB.png",
                 link:"https://testcisb.dock.social/"
             },
             {
                 title:"Dock Social",
-                type:"E-Commerce Website",
+                type:"Digital Agency",
                 image:"assets/img/projects/dock-social.png",
                 link:"https://dock.social/"
             },{
                 title:"Glow Up With Shahla",
-                type:"E-Commerce Website",
+                type:"Personal Branding & Coaching",
                 image:"assets/img/projects/glow-Up-With-Shahla.png",
                 link:"https://www.glowupwithshahla.online/"
             },{
                 title:"Grayford Consultants",
-                type:"E-Commerce Website",
+                type:"Business Consulting",
                 image:"assets/img/projects/Grayford-Consultants.png",
                 link:"https://www.grayfordconsultants.com/"
             },
             {
                 title:"Off-Grid Champion",
-                type:"E-Commerce Website",
+                type:"Personal Branding & Educational",
                 image:"assets/img/projects/Off-Grid-Champion.png",
                 link:"https://www.offgridchampion.com/"
             },
             {
                 title:"Rawasi International",
-                type:"E-Commerce Website",
+                type:"Trading Company",
                 image:"assets/img/projects/rawasi-Trading.png",
                 link:"https://www.rawasitrading.com/"
             },
             
             {
                 title:"Zemz General Trading LLC",
-                type:"E-Commerce Website",
+                type:"Corporate Business",
                 image:"assets/img/projects/ZEMZ-General-Trading.png",
                 link:"https://www.zemzglobal.com/demo/"
             },
             {
                 title:"Payyoli Mixtures",
-                type:"Corporate Website",
+                type:"Food & Beverage",
                 image:"assets/img/projects/payyolimixture.png",
-                link:"http://localhost/payyolimixture/"
+                link:"https://payyolimixtures.infinityfree.me/"
             },
 
             {
                 title:"MyFurniture",
-                type:"Educational Website",
+                type:"E-Commerce",
                 image:"assets/img/projects/myfurniture.png",
-                link:"http://localhost/myfurniture"
+                link:""
             },
 
             {
                 title:"Salwa",
-                type:"E-Commerce Website",
+                type:"Corporate Business",
                 image:"assets/img/projects/Salwa Premium Saudi Dates Online.png",
-                link:"http://localhost/salwa/"
+                link:"https://salwa.infinityfreeapp.com/"
             },
 
             {
@@ -1019,14 +1038,21 @@
             },
             {
                 title:"Wadihuda",
-                type:"E-Commerce Website",
+                type:"Educational",
                 image:"assets/img/projects/Progressive.png",
                 link:"https://testwadihuda.dock.social/"
-            },{
+            }
+            ,{
                 title:"Aspire International Tours & Travels",
-                type:"E-Commerce Website",
+                type:"Travel & Tourism",
                 image:"assets/img/projects/aspire-International.png",
                 link:"https://www.aspiretourstravels.com/"
+            },
+            {
+                title:"Printone",
+                type:"Travel & Tourism",
+                image:"assets/img/projects/Printer Rental & Lease UAE _ Photocopier Leasing Dubai _ Printone.png",
+                link:"https://printone.infinityfreeapp.com/"
             }
 
         ];
@@ -1048,53 +1074,64 @@
             });
 
             document.addEventListener("DOMContentLoaded", function () {
-
     const sections = document.querySelectorAll(
-    "#home, #about-sec, #services, #projects-wrapper, #experience, #getintouch"
-);
+        "#hero, #about-sec, #services, #projects-wrapper, #experience, #getintouch"
+    );
     const navLinks = document.querySelectorAll(".header-menus a, .th-mobile-menu a");
 
     window.addEventListener("scroll", () => {
-
         let current = "";
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 120;
-            const sectionHeight = section.offsetHeight;
+        // If at the top of the page, force current section to hero
+        if (window.scrollY < 150) {
+            current = "hero";
+        } else {
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                const sectionHeight = section.offsetHeight;
 
-            if (window.scrollY >= sectionTop &&
-                window.scrollY < sectionTop + sectionHeight) {
-                current = section.getAttribute("id");
-            }
-        });
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute("id");
+                }
+            });
+        }
 
         navLinks.forEach(link => {
             link.classList.remove("active");
-
             const href = link.getAttribute("href");
 
-            if (href === "#" + current) {
+            // Check if it matches index.html for Home or the respective section hash
+            if ((current === "hero" && (href === "index.html" || href === "#hero")) || href === "#" + current) {
                 link.classList.add("active");
             }
         });
-
-        // Home active at top
-        if (window.scrollY < 100) {
-            navLinks.forEach(link => link.classList.remove("active"));
-            document.querySelector('.header-menus a[href="<?php echo home_url();?>"]')?.classList.add("active");
-        }
-
     });
-
 });
         </script>
 
-        <!-- 2. Include AOS JS -->
+    <!-- 2. Include AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- 3. Initialize AOS -->
     <script>
-        AOS.init();
+        AOS.init({
+            once: true
+        });
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+var photo = document.getElementById('photo');
+var stage = document.getElementById('stage');
+stage.addEventListener('mousemove', function(e){
+  var r = stage.getBoundingClientRect();
+  var x = (e.clientX - r.left) / r.width - 0.5;
+  var y = (e.clientY - r.top) / r.height - 0.5;
+  gsap.to(photo, { rotateY: x*14, rotateX: -y*14, duration:.5, ease:'power2.out' });
+});
+stage.addEventListener('mouseleave', function(){
+  gsap.to(photo, { rotateY:0, rotateX:0, duration:.7, ease:'power3.out' });
+});
+</script>
 
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
