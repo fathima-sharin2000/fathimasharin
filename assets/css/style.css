@@ -49,7 +49,7 @@ body {
 }
 
 .zero-space {
-	padding-top: var(--seconadry-section-space);
+	padding-top: var(--zero-space);
 	padding-bottom: var(--seconadry-section-space);
 }
 
@@ -25650,7 +25650,7 @@ footer .about-logo img {
 }
 
 .experience-section {
-    padding: 100px 0;
+    padding: 0 0 0 80px;
     /* background: #050505; */
 }
 
@@ -30927,6 +30927,11 @@ footer .about-logo img {
 	.th-menu-wrapper .th-menu-area {
 		background-color: #050816;
 	}
+}
+
+.brand-box img {
+	height: 80px;
+	width: 80px;
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
