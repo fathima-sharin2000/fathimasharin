@@ -1200,25 +1200,17 @@ function displayProjects(page){
                class="tour-boxes style4 th-ani gsap-cursor project">
 
                 <div class="tour-box_img projectimg">
-
-                    <div class="new-btn">
-                        Visit Website
-                        <i class="fa-solid fa-angle-right"></i>
-                    </div>
-
+                <span class="fs-card__cat fs-card__cat--teal">${project.type}</span>
                     <img src="${project.image}" alt="${project.title}">
 
                 </div>
 
                 <div class="tour-content">
-
-                    <p class="feature-item_text projecttype">
-                        ${project.type}
-                    </p>
-
                     <h3 class="box-title projectname">
                         ${project.title}
                     </h3>
+
+                    <p>${project.description}</p>
 
                 </div>
 
